@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Task 1</title>
+    <style>
+      .inline-form {
+        display: flex;
+        align-items: center;
+        /* margin-right: 10px; */
+      }
+      .inline-form input[type="text"] {
+        margin-right: 5px;
+      }
+      section img {
+        width: 22%;
+        height: 25%;
+      }
+      .form-control p {
+        margin-top: 5px;
+        margin-bottom: 1px;
+      }
+      .form-control label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-control input[type="text"],
+      .form-control input[type="date"] {
+        width: 20%;
+        padding: 0.5px;
+        box-sizing: border-box;
+      }
+      .form-text{
+        margin-top: 2px;
+      }
+      .form-text textarea{
+        display: block;
+        box-sizing: border-box;
+      }
+      .form-text button{
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <hr />
+      <section class="inline-form">
+        <form>
+          <label for="image">
+            Search your Image here:
+            <input
+              type="text"
+              name=""
+              id="image"
+              placeholder="Enter Image Name"
+            />
+          </label>
+        </form>
+        <button type="submit">Search</button>
+      </section>
+      <section>
+        <img src="../assets/kung_fu_panda.png" alt="Kung Fu Panda Image" />
+      </section>
+      <section>
+        <a href="">For more click here</a>
+      </section>
+      <hr />
+      <section class="form-control">
+        <p>Feedback Form:</p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <label for="date-input">Date:</label>
+        <input type="date" name="date-input" id="date-input" />
+      </section>
+      <section class="form-text">
+        Comment:
+        <textarea name="" id="" cols="80" rows="5"></textarea>
+        <button class="btn" type="submit">Submit</button>
+      </section>
+    </main>
+  </body>
+</html>
