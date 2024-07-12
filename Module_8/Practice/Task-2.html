@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Task - 2</title>
+    <style>
+      .container {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        height: 98vh;
+        width: 98vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /* grid-template-rows: auto; */
+        row-gap: 0.5em;
+        column-gap: 0.5em;
+      }
+      .item {
+        /* border: 2px solid firebrick; */
+        color: white;
+        padding: 0.5em;
+        font-size: 3em;
+        font-weight: 600;
+      }
+      .item:nth-child(1) {
+        background-color: #e61e65;
+        grid-column-start: span 2;
+        /* grid-column-end: 3; */
+        grid-row-start: span 2;
+        /* grid-row-end: 3; */
+      }
+      .item:nth-child(2) {
+        background-color: #fb9b11;
+        grid-column-start: span 2;
+        /* grid-column-end: 3; */
+      }
+      .item:nth-child(3) {
+        background-color: #a93bbb;
+      }
+      .item:nth-child(4) {
+        background-color: #576c7a;
+      }
+
+      @media screen and (max-width: 976px) {
+        .content {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5em;
+          width: 100%;
+        }
+        .item{
+            height: 25%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+    </div>
+  </body>
+</html>
